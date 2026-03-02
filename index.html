@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game 2048++</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <br />
+  <h1>Game 2048++</h1>
+  <div id="by">by <a href="https://github.com/YariLab">Yaroslav Bohachuk</a></div>
+  <div id="score-container">
+    <div>Best: <span id="best">0</span></div>
+    <div>Score: <span id="score">0</span></div>
+    <div>Key: <span id="key-pressed"></span></div>
+  </div>
+  <div id="game-board"></div>
+  <div id="gameOver">Game Over</div>
+  <button id="new-game" onclick="startNewGame()">New Game</button>
+  <button id="auto-play-game" onclick="autoPlay()">Auto Play</button>
+  <button id="board-size-toggle" onclick="toggleBoardSize()">4x4</button>
+  <script src="game.js"></script>
+  <script src="ai.js"></script>
+</body>
+</html>
